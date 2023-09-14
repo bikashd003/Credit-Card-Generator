@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+#main img {
+  width: 30%;
+  height: 100vh;
+}
+#main form {
+  width: 70%;
+  height: 100vh;
+}
+p{
+  font-family: 'Inter';
+  color: #F81212;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  font-size: 0.8vmax;
+}
+h1{
+  margin-bottom: 8px;
+}
+#form {
+  padding: 15% 10% 0 20%;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+#form .cardholder-name {
+  text-transform: uppercase;
+  font-size: 0.5vmax;
+  letter-spacing: 1.5px;
+  color: #404040;
+  font-family: "Roboto";
+  margin-bottom: 10px;
+}
+.cardholder-name input {
+  padding: 1vw 0.5vw;
+  font-size: 1vmax;
+  border-radius: 10px;
+  border: 2px solid gainsboro;
+  width: 60%;
+}
+#form .cardnumber {
+  text-transform: uppercase;
+  font-size: 0.5vmax;
+  letter-spacing: 1.5px;
+  color: #404040;
+  font-family: "Roboto";
+  margin-bottom: 10px;
+}
+.cardnumber input {
+  padding: 1vw 0.5vw;
+  font-size: 1vmax;
+  border-radius: 10px;
+  border: 2px solid gainsboro;
+  width: 60%;
+}
+.details {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.details .exp {
+  font-size: 1vmax;
+  letter-spacing: 1.5px;
+  color: #404040;
+  text-transform: uppercase;
+  font-family: "Roboto";
+}
+.details .cvch1 {
+  font-size: 1vmax;
+  letter-spacing: 1.5px;
+  color: #404040;
+  text-transform: uppercase;
+  font-family: "Roboto";
+}
+.date{
+  display: flex;
+}
+.date .month {
+  margin-right: 10px;
+}
+
+.date input {
+  padding: 1vw 0.5vw;
+  font-size: 1vmax;
+  border-radius: 10px;
+  border: 2px solid gainsboro;
+  width: 80%;
+}
+.cvc {
+  width: 70%;
+  padding: 1vw 0.5vw;
+  font-size: 1vmax;
+  border-radius: 10px;
+  border: 2px solid gainsboro;
+}
+.conform {
+  font-size: 1.5vmax;
+  text-transform: capitalize;
+  background-color: #220930;
+  color: #fff;
+  padding: 1vw 9vw;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 10px;
+  font-family: "Inter";
+}
