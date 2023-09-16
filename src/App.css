@@ -49,6 +49,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 10px;
   border: 2px solid gainsboro;
   width: 60%;
+  outline: none;
 }
 #form .cardnumber {
   text-transform: uppercase;
@@ -64,6 +65,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 10px;
   border: 2px solid gainsboro;
   width: 60%;
+  outline: none;
 }
 .details {
   width: 70%;
@@ -97,6 +99,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 10px;
   border: 2px solid gainsboro;
   width: 80%;
+  outline: none;
 }
 .cvc {
   width: 70%;
@@ -104,6 +107,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 1vmax;
   border-radius: 10px;
   border: 2px solid gainsboro;
+  outline: none;
 }
 .conform {
   font-size: 1.5vmax;
@@ -115,4 +119,77 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 0;
   border-radius: 10px;
   font-family: "Inter";
+  transition: all ease 0.5s;
+}
+.conform:active {
+ transform: scale(0.8);
+}
+
+@media (max-width: 400px) {
+  #main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  #main img {
+    width: 100%; 
+    height: 30vh; 
+  }
+  
+  #main form {
+    width: 100%; 
+    margin: 20vw auto;
+    
+    height: fit-content;
+  }
+  p{
+    font-size: 1vmax;
+  }
+ 
+  #form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+  
+
+  }
+
+  .cardholder-name input {
+    font-size: 1.5vmax;
+    border-radius: 6px;
+    width: 100%;
+
+  }
+
+  .cardnumber input {
+    font-size: 1.5vmax;
+    border-radius: 6px;
+    width: 100%;
+  }
+
+
+  .date input {
+    padding: 1vw 0.5vw;
+    font-size: 1.5vmax;
+    border-radius: 6px;
+   
+  }
+  .details {
+    width: 100%;
+    column-gap: 20px;
+   
+  }
+  .cvc {
+    font-size: 1.5vmax;
+    border-radius: 6px;
+    width: 100%;
+  }
+  .conform {
+    font-size: 1.7vmax;
+    padding: 1vw 15vw;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
 }
