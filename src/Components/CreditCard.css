@@ -68,7 +68,7 @@
   top: 7vw;
   right: 4vw;
 }
-@media (max-width: 400px) {
+@media (max-width: 560px) {
 
   .front-card {
     width: 28vmax;
